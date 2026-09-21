@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Enlace</title>
     <style>
-        html,body{height:100%;margin:0}
-        .wrap{height:100%;display:flex;align-items:center;justify-content:center}
-        button{padding:12px 20px;font-size:16px;cursor:pointer}
+        html,
+        body {
+            height: 100%;
+            margin: 0
+        }
+
+        .wrap {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        button {
+            padding: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: transparent;
+        }
     </style>
 </head>
+
 <body>
     <div class="wrap">
-        <button id="openBtn">Abrir</button>
+        <button id="openBtn"></button>
     </div>
     <script>
-        document.getElementById('openBtn').addEventListener('click', function(){
+        document.getElementById('openBtn').addEventListener('click', function () {
             window.open('https://docs.google.com/spreadsheets/d/1v1vmOVxZunVnwIYjnU0_l2PO287eL1wX/export?format=xlsx', '_blank');
         });
     </script>
 </body>
+
 </html>
